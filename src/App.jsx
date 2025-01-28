@@ -1,7 +1,7 @@
 import styles from './styles/index.module.scss';
 
-export const App = () =>{
-  return(
+export const App = () => {
+  return (
     <div>
       <div className={`${styles.btn} ${styles.lg}`}>large</div>
       <br />
