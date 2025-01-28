@@ -1,0 +1,76 @@
+@import 'global.scss';
+
+body{
+    background-color: $dark-background;
+}
+.btn {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background: $button-background;
+    color: $dark-text;
+    border: 1px solid $border-color;
+    padding: 10px 20px;
+    border-radius: $btn-radius;
+    overflow: hidden;
+    z-index: 1;
+    font-family: $font;
+    border: none;
+  
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: $button-hover;
+      transition: left 0.3s ease;
+      border-radius: $btn-radius;
+      z-index: -1;
+    }
+  
+    &:hover::before {
+      left: 0
+    }
+  }
+  
+  .error-message {
+    color: $error-color;
+    font-weight: bold;
+  }
+  
+  .success-message {
+    color: $success-color;
+    font-weight: bold;
+  }
+  
+  a {
+    color: $link-color;
+    text-decoration: none;
+  
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+
+.sm{
+    max-width: 50px;
+    max-height: 25px;
+}
+.md{
+    min-height: 25px;
+    min-width: 50px;
+    max-width: 100px;
+    max-height: 50px;
+}
+
+.lg{
+    min-height: 50px;
+    min-width: 100px;
+    max-width: 200px;
+    max-height: 100px;
+}
+
