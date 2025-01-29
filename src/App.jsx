@@ -8,7 +8,8 @@ export const App = () => {
       <div className={`${styles.btn} ${styles.md}`}>medium</div>
       <br />
       <div className={`${styles.btn} ${styles.sm}`}>small</div>
-
+      <br /> 
+      <div className={`${styles.success} ${styles.sm}`}>success</div>
     </div>
   );
 }

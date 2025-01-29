@@ -2,7 +2,6 @@
 
 $dark-background: rgb(29, 29, 29);
 $dark-text: rgb(214, 214, 214);
-$dark-active: linear-gradient(45deg, rgb(255, 0, 255), rgb(6, 255, 6));
 
 $btn-radius: 5px;
 
@@ -10,13 +9,10 @@ $button-background: rgb(50, 50, 50);
 
 $button-hover: linear-gradient(45deg, rgb(255, 0, 0), rgb(255, 136, 0));
 $border-color: rgb(80, 80, 80);
-$error-color: rgb(255, 50, 50);
-$success-color: rgb(0, 200, 0);
+$error-color: rgb(187, 32, 32);
+$success-color: rgb(2, 155, 2);
 $link-color: rgb(0, 150, 255);
 $size-number: 25px;
 
-// ====================
-// | настройки шрифта |
-// ====================
 $font: "Roboto";
 $font-size: 15px;
