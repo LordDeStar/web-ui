@@ -1,15 +1,20 @@
+import { Button } from './components/partials/Button';
+import { ErrorMessage } from './components/partials/ErrorMessage';
+import { SuccessMessage } from './components/partials/SuccessMessage';
 import styles from './styles/index.module.scss';
 
 export const App = () => {
   return (
     <div>
-      <div className={`${styles.btn} ${styles.lg}`}>large</div>
+      <Button size="lg" text="large"/>
       <br />
-      <div className={`${styles.btn} ${styles.md}`}>medium</div>
+      <Button size="md" text="medium" />
       <br />
-      <div className={`${styles.btn} ${styles.sm}`}>small</div>
+      <Button size="sm" text="small" />
       <br /> 
-      <div className={`${styles.success} ${styles.sm}`}>success</div>
+      <SuccessMessage message="test success message" />
+      <br />
+      <ErrorMessage message="test error message"/>
     </div>
   );
 }
